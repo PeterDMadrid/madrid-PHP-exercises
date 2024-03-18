@@ -1,8 +1,8 @@
 <?php
-namespace model;
+namespace src\Model;
 
 date_default_timezone_set('Asia/Manila');
-class Format {
+class DateModel {
     public function format1(){
         return date('Y-m-d H:i:s');
     }
