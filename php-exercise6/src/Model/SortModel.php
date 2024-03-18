@@ -1,8 +1,8 @@
 <?php
-namespace model;
-class Sorter {
-    
-    public function asc($array, $length){
+namespace src\Model;
+
+class SortModel {
+    public function ascending($array, $length){
         for($i = 0; $i < $length; $i++) {
             for($j = 0; $j < $length - 1 - $i; $j++) {
                 if($array[$j] > $array[$j + 1]) {
@@ -15,7 +15,7 @@ class Sorter {
         return $array;
     }
 
-    public function desc($array, $length){
+    public function descending($array, $length){
         for($i = 0; $i < $length; $i++) {
             for($j = 0; $j < $length - 1 - $i; $j++) {
                 if($array[$j] < $array[$j + 1]) { 
