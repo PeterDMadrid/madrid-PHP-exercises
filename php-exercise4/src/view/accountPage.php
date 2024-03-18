@@ -1,5 +1,9 @@
 <?php
-require_once "../control/controlAccount.php";
+namespace src\AccountPage;
+
+use src\Controller\ControllerAccount;
+$controllerAcc = new ControllerAccount();
+$controllerAcc->index();
 ?>
 <!DOCTYPE html>
 <html lang="en">

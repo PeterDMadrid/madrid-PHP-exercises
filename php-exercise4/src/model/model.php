@@ -1,20 +1,7 @@
-<?php
-namespace model;
+<?php 
+namespace src\Model;
 
-class Accounts {
-    public $usernames = ["peter", "kirsch", "madrid"];
-    public $passwords = ["peter123", "kirsch123", "madrid123"];
-
-    public function getUsernames(){
-        return $this->usernames;
-    }
-
-    public function getPasswords(){
-        return $this->passwords;
-    }
-}
-
-class Validation {
+class Model {
     private $usernames;
     private $passwords;
     private $userInput;
