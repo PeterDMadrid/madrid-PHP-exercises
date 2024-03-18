@@ -1,6 +1,5 @@
 <?php
-
-namespace src\model;
+namespace src\Model;
 
 class FiboModel{
     function generateFib($length)
@@ -11,5 +10,4 @@ class FiboModel{
         }
         return $array;
     }
-
 }

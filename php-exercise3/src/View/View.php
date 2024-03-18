@@ -1,6 +1,3 @@
-<?php 
-require_once 'src/control/FiboControl.php'; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
