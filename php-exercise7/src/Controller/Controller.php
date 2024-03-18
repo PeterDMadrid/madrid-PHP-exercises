@@ -1,7 +1,11 @@
 <?php
-require "src/model/model.php";
-use model\form;
-$first = '';
+namespace src\Controller;
+
+use src\Model\Model;
+
+class Controller {
+    public function index(){
+        $first = '';
 $last = '';
 $em = '';
 $text = '';
@@ -12,7 +16,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    $form = new form($firstName, $lastName, $email, $message);
+    $form = new Model($firstName, $lastName, $email, $message);
 
     $first = $form->getFirst();
     $last = $form->getLast();
@@ -24,4 +28,6 @@ $first = $first ?? "";
 $last = $last ?? "";
 $em = $em ?? "";
 $text = $text ?? "";
-require "src/view/view.php";
+require __DIR__ . "/../View/View.php";
+    }
+}

@@ -1,6 +1,7 @@
 <?php 
-namespace model;
-class form {
+namespace src\Model;
+
+class Model {
     public $first;
     public $last;
     public $email;
