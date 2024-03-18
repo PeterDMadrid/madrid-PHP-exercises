@@ -1,7 +1,7 @@
 <?php
-namespace model;
+namespace src\Model;
 
-class Operations {
+class OperationsModel {
     public function concatenate($string1, $string2){
         return $string1 . $string2;
     }
