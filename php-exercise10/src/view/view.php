@@ -1,7 +1,3 @@
-<?php
-require "src/control/control.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

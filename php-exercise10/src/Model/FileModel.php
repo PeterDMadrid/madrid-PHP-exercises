@@ -1,7 +1,7 @@
 <?php
-namespace model;
+namespace src\Model;
 
-class FileSettings {
+class FileModel {
     public function create($file, $text){
         if($file){
             fwrite($file, $text);
