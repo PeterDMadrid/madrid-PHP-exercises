@@ -1,6 +1,7 @@
 <?php
-namespace model\model;
-class Operations{
+namespace src\Model;
+
+class CalculatorModel{
 
 public static function add($first, $second){
     if(isset($first) && isset($second)){

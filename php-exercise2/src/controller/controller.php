@@ -1,34 +1,41 @@
-<?php 
-require_once 'src/model/model.php';
-use model\model\Operations;
+<?php
+namespace src\Controller;
 
-$result = "";
+use src\Model\CalculatorModel;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-    $first = $_POST['first'] ?? null;
-    $second = $_POST['second'] ?? null;
-    $operator = $_POST['operations'] ?? null;
+class Controller
+{
+    public function index()
+    {
+        $operations = new CalculatorModel();
 
-    if(isset($operator)){
-        switch($operator){
-            case "+":
-                $result = !empty(Operations::checkEmpty($first, $second)) ? Operations::checkEmpty($first, $second) : Operations::add($first, $second);
-                break;
-            case "-":
-                $result = !empty(Operations::checkEmpty($first, $second)) ? Operations::checkEmpty($first, $second) : Operations::subtract($first, $second);
-                break;
-            case "/":
-                $result = !empty(Operations::checkEmpty($first, $second)) ? Operations::checkEmpty($first, $second) : Operations::divide($first, $second);
-                break;
-            case "*":
-                $result = !empty(Operations::checkEmpty($first, $second)) ? Operations::checkEmpty($first, $second) : Operations::multiply($first, $second);
-                break;
-            default:
-                $result = "Invalid Operator";
-                break;
+        $result = "";
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $first = $_POST['first'] ?? null;
+            $second = $_POST['second'] ?? null;
+            $operator = $_POST['operations'] ?? null;
+
+            if (isset($operator)) {
+                switch ($operator) {
+                    case "+":
+                        $result = !empty($operations->checkEmpty($first, $second)) ? $operations->checkEmpty($first, $second) : $operations->add($first, $second);
+                        break;
+                    case "-":
+                        $result = !empty($operations->checkEmpty($first, $second)) ? $operations->checkEmpty($first, $second) : $operations->subtract($first, $second);
+                        break;
+                    case "/":
+                        $result = !empty($operations->checkEmpty($first, $second)) ? $operations->checkEmpty($first, $second) : $operations->divide($first, $second);
+                        break;
+                    case "*":
+                        $result = !empty($operations->checkEmpty($first, $second)) ? $operations->checkEmpty($first, $second) : $operations->multiply($first, $second);
+                        break;
+                    default:
+                        $result = "Invalid Operator";
+                        break;
+                }
+            }
         }
+
+        include __DIR__ . "/../View/CalculatorView.php";
     }
 }
-    $result = $result ?? "";
-    require "src/view/view.php";
-
