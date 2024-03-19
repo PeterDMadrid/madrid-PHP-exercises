@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    font-weight: bolder;
+    color: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(17,22,27,1) 29%, rgba(31,57,87,1) 71%, rgba(0,45,98,1) 100%);
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', monospace;   
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(17,22,27,1) 29%, rgba(31,57,87,1) 71%, rgba(0,45,98,1) 100%);
+}
+
+
+.container{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+
+.item1, .item2 {
+    width: 350px;
+    height: 550px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.item2 {
+    background-color: rgb(7, 25, 41);
+    color: white;
+}
+
+.firstSection, .secondSection, .thirdSection, .fourthSection{
+    display: flex;
+}
+
+.firstSection{
+    margin-top: 38px;
+    justify-content: flex-start;
+    width: 90%;
+}
+
+input {
+    width: 155px;
+    margin-left: 5px;
+    font-family: 'Courier New', monospace; 
+}
+
+.secondSection {
+    margin-top: 22px;
+}
+
+textarea {
+    width: 320px;
+    font-family: 'Courier New', monospace; 
+    font-size: 20px;
+}
+
+.thirdSection {
+    margin-top: 18px;
+    height: 50px;
+    width: 90%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.fourthSection {
+    margin-top: 18px;
+    height: 50px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+    height: 35px;
+    width: 120px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier New', monospace; 
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(17,22,27,1) 29%, rgba(31,57,87,1) 71%, rgba(0,45,98,1) 100%);
+}
+.btn1 {
+    cursor: pointer;
+    height: 35px;
+    width: 266px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Courier New', monospace; 
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(17,22,27,1) 29%, rgba(31,57,87,1) 71%, rgba(0,45,98,1) 100%);
+}
+
+.firstSection2{
+    color: greenyellow;
+    margin-top: 10px;
+}
