@@ -4,8 +4,10 @@ namespace src\Controller;
 use src\Model\ModelAccounts;
 use src\Model\Model;
 
-class Controller {
-    public function index(){
+class Controller
+{
+    public function index()
+    {
         $message = "";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['username']) && isset($_POST['password'])) {
@@ -17,8 +19,8 @@ class Controller {
 
             $errors = $validation->validate();
 
-            if(empty($errors)){
-                if($validation->check()){
+            if (empty($errors)) {
+                if ($validation->check()) {
                     include __DIR__ . "/../View/AccountPage.php";
                     exit();
                 } else {
