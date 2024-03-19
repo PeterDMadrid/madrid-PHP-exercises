@@ -3,8 +3,10 @@ namespace src\Controller;
 
 use src\Model\DateModel;
 
-class Controller {
-    public function index(){
+class Controller
+{
+    public function index()
+    {
         $format = new DateModel();
         $format1 = $format->format1();
         $format2 = $format->format2();
@@ -12,6 +14,6 @@ class Controller {
         $format4 = $format->format4();
         $format5 = $format->format5();
 
-        require __DIR__."/../View/View.php";
+        require __DIR__ . "/../View/View.php";
     }
 }

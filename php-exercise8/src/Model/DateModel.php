@@ -2,23 +2,29 @@
 namespace src\Model;
 
 date_default_timezone_set('Asia/Manila');
-class DateModel {
-    public function format1(){
+class DateModel
+{
+    public function format1()
+    {
         return date('Y-m-d H:i:s');
     }
 
-    public function format2(){
+    public function format2()
+    {
         return  date('F j, Y');
     }
 
-    public function format3(){
+    public function format3()
+    {
         return date('h:i:s A');
     }
 
-    public function format4(){
+    public function format4()
+    {
         return date('h:i:s A');
     }
-    public function format5(){
+    public function format5()
+    {
         return date('l, F j');
     }
 }
