@@ -2,26 +2,29 @@
 namespace src\AccountPage;
 
 use src\Controller\ControllerAccount;
+
 $controllerAcc = new ControllerAccount();
 $controllerAcc->index();
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Page</title>
 </head>
+
 <body>
     <form method="post" action="">
-    <div class="container">
-        <div class="item1">
-            <h2>Login Successful</h2>
+        <div class="container">
+            <div class="item1">
+                <h2>Login Successful</h2>
+            </div>
+            <div class="item2">
+                <button class="button" name="logout">Log Out</button>
+            </div>
         </div>
-        <div class="item2">
-            <button class="button" name="logout">Log Out</button>
-        </div>
-    </div>
     </form>
     <style>
         body {
@@ -46,17 +49,19 @@ $controllerAcc->index();
             background-color: #1c1c1c;
             border-radius: 4px;
 
-            background: rgba( 35, 35, 35, 0.75 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 14.5px );
-            -webkit-backdrop-filter: blur( 14.5px );
+            background: rgba(35, 35, 35, 0.75);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(14.5px);
+            -webkit-backdrop-filter: blur(14.5px);
             border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
-        .box3{
+
+        .box3 {
             display: flex;
             justify-content: center;
         }
+
         .button {
             font-family: 'Verdana', sans-serif;
             width: 100px;
@@ -70,4 +75,5 @@ $controllerAcc->index();
         }
     </style>
 </body>
+
 </html>
