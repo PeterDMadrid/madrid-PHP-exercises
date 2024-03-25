@@ -1,0 +1,219 @@
+@import url('https://fonts.cdnfonts.com/css/amoera');
+
+* {
+    margin: 0;
+    font-weight: bolder;
+    color: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(17,22,27,1) 29%, rgba(31,57,87,1) 71%, rgba(0,45,98,1) 100%);
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', monospace;   
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(17,22,27,1) 29%, rgba(31,57,87,1) 71%, rgba(0,45,98,1) 100%);
+}
+
+
+.container{
+    margin-top: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+
+.item1, .item2, .item3 {
+    width: 350px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.firstSection, .secondSection{
+    width: 96%;
+    height: 25px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.thirdSection, .fourthSection, .fifthSection {
+    width: 96%;
+}
+
+.thirdSection {
+    margin-top: 20px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fourthSection {
+    margin-top: 15px;
+    height: 25px;
+}
+
+.fifthSection{
+    margin-top: 5px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 320px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px rgb(26, 26, 26),
+                inset -1px -1px 4px rgb(169, 169, 169);
+
+}
+
+.first, .second {
+    width: 200px;
+    font-size: 13px;
+}
+.textBox1{
+    width: 193px;
+    font-family: 'Courier New', monospace; 
+}
+.textBox2{
+    width: 185px;
+    font-family: 'Courier New', monospace; 
+}  
+
+.btn {
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    width: 150px;
+    height:40px;
+    font-family: 'Courier New', monospace;   
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(17,22,27,1) 29%, rgba(31,57,87,1) 71%, rgba(0,45,98,1) 100%);
+}
+
+input{
+    background: none;
+
+}
+
+/* ITEEEEEM2 */
+
+
+.firstSection2{
+    margin-top: 15px;
+}
+
+.index, .indexInput {
+    text-align: center;
+}
+.indexInput{
+    margin-top: 5px;
+}
+
+.indexInputBox{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', monospace; 
+}
+
+.secondSection2{
+    margin-top: 15px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2{
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    width: 150px;
+    height:40px;
+    font-family: 'Courier New', monospace;   
+    background: rgb(10,10,10);
+    background: linear-gradient(90deg, rgba(10,10,10,1) 0%, rgba(17,22,27,1) 29%, rgba(31,57,87,1) 71%, rgba(0,45,98,1) 100%);
+}
+
+.thirdSection2{
+    margin-top: 20px;
+    height: 20px;
+    margin-right: 265px;
+}
+
+
+ .fourthSection2{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 320px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px rgb(26, 26, 26),
+                inset -1px -1px 4px rgb(169, 169, 169);
+ }
+
+ /* item3 */
+
+
+
+ .firstSection3 {
+    margin-top: 20px;
+    display: flex;
+ }
+
+ .result2 {
+    width: 174px;
+    height: 15px;;
+ }
+
+ .secondSection3{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;  
+ }
+
+ .thirdSection3{
+    margin-top: 39px;
+ }
+
+ .fourthSection3{
+    margin-top: 30px;
+    height: 20px;
+    margin-right: 265px;
+ }
+ .fifthSection3{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 320px;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px rgb(26, 26, 26),
+                inset -1px -1px 4px rgb(169, 169, 169);
+ }
+
+.replaceField  {
+    font-family: 'Courier New', monospace;  
+    width: 190px;
+    margin-left: 4px;
+}
+
